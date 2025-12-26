@@ -1,0 +1,9 @@
+[versions]
+byte-buddy = "1.18.3"
+javassist = "3.30.2-GA"
+spring = "7.0.2"
+
+[libraries]
+byte-buddy = { module = "net.bytebuddy:byte-buddy", version.ref = "byte-buddy" }
+javassist = { module = "org.javassist:javassist", version.ref = "javassist" }
+spring-core = { module = "org.springframework:spring-core", version.ref = "spring" }

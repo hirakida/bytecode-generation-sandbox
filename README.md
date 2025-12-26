@@ -1,1 +1,1 @@
-# byte-code-generation-sandbox
+# bytecode-generation-sandbox
