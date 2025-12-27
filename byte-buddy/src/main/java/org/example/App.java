@@ -17,7 +17,8 @@ public class App {
             HelloService helloService = dynamicType.getDeclaredConstructor().newInstance();
             System.out.println(helloService.greet());
             System.out.println(helloService.greet("Byte Buddy"));
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
         }
     }
 }
