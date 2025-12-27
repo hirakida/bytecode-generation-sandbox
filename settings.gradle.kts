@@ -4,6 +4,7 @@ plugins {
 
 rootProject.name = "bytecode-generation-sandbox"
 
+include("asm")
 include("byte-buddy")
 include("javassist")
 include("jdk-proxy")
