@@ -11,14 +11,13 @@ public class App {
 
         CtMethod ctMethod1 = ctClass.getDeclaredMethod("greet");
         ctMethod1.insertBefore("System.out.println(\"Before\");");
-        ctMethod1.insertAfter("System.out.println(\"After\");");
         CtClass[] ctClasses = {classPool.get(String.class.getName())};
         CtMethod ctMethod2 = ctClass.getDeclaredMethod("greet", ctClasses);
         ctMethod2.insertBefore("System.out.println(\"Before name:%s\".formatted(new String[]{name}));");
 
         Class<?> clazz = ctClass.toClass();
         HelloService helloService = (HelloService) clazz.getDeclaredConstructor().newInstance();
-        helloService.greet();
-        helloService.greet("javassist");
+        System.out.println(helloService.greet());
+        System.out.println(helloService.greet("javassist"));
     }
 }
