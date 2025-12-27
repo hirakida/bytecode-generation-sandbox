@@ -1,11 +1,11 @@
 package org.example;
 
 public class HelloService {
-    public void greet() {
-        System.out.println("Hello!");
+    public String greet() {
+        return "Hello!";
     }
 
-    public void greet(String name) {
-        System.out.println("Hello from " + name);
+    public String greet(String name) {
+        return "Hello from " + name;
     }
 }

@@ -1,5 +1,5 @@
 plugins {
-    id("bytecode-generation-sandbox.core-conventions")
+    id("bytecode-generation-sandbox.java-conventions")
     application
 }
 
